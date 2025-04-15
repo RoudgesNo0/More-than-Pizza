@@ -105,3 +105,5 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE
 Leon Schmidt - leon@roudges.de
 
 Projekt Link: [https://github.com/RoudgesNo0/more-than-pizza](https://github.com/RoudgesNo0/more-than-pizza) 
+
+<img width="1360" alt="image" src="https://github.com/user-attachments/assets/b559f50d-6ce2-4e1b-8fe8-546620aea4a7" />
