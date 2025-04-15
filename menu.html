@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speisekarte - More Than Pizza Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/024/284/682/small_2x/restaurant-logo-5-png.png" alt="More Than Pizza Logo" class="logo">
+            <div class="logo-text">
+                <h1>More Than Pizza</h1>
+                <span>RISTORANTE</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="chefs.html">CHEFS</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-page">
+        <div class="menu-header">
+            <h2>Genießen Sie unsere Küche</h2>
+            <p>Frische Zutaten, traditionelle Rezepte mit modernem Twist</p>
+        </div>
+
+        <div class="menu-categories">
+            <div class="category-button active" data-category="all">Alle Gerichte</div>
+            <div class="category-button" data-category="starters">Vorspeisen</div>
+            <div class="category-button" data-category="main-courses">Hauptgerichte</div>
+            <div class="category-button" data-category="desserts">Desserts</div>
+            <div class="category-button" data-category="drinks">Getränke</div>
+        </div>
+
+        <div class="menu-search">
+            <div class="search-container">
+                <input type="text" id="menu-search-input" placeholder="Gerichte oder Zutaten suchen...">
+                <button type="button" id="menu-search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="allergen-legend">
+            <h3>Allergene & Diätvorlieben</h3>
+            <div class="allergen-items">
+                <div class="allergen-item"><span class="allergen-code">G</span> - Glutenhaltiges Getreide</div>
+                <div class="allergen-item"><span class="allergen-code">L</span> - Laktose</div>
+                <div class="allergen-item"><span class="allergen-code">E</span> - Eier</div>
+                <div class="allergen-item"><span class="allergen-code">N</span> - Nüsse</div>
+                <div class="allergen-item"><span class="allergen-code">F</span> - Fisch</div>
+                <div class="allergen-item"><span class="allergen-code">S</span> - Soja</div>
+                <div class="allergen-item"><span class="allergen-code">V</span> - Vegetarisch</div>
+                <div class="allergen-item"><span class="allergen-code">VG</span> - Vegan</div>
+            </div>
+        </div>
+
+        <div class="menu-items">
+            <div class="menu-category" id="starters">
+                <h3>Antipasti & Vorspeisen</h3>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="starters" data-tags="vorspeise bruschetta tomaten basilikum vegetarisch">
+                        <div class="menu-item-image">
+                            <img src="https://img.chefkoch-cdn.de/rezepte/761431178875412/bilder/394631/crop-960x540/bruschetta-mit-tomaten-und-knoblauch.jpg" alt="Bruschetta">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Bruschetta Classica <span class="menu-item-price">€8.50</span></h4>
+                            <p class="menu-item-description">Geröstetes Ciabatta-Brot mit frischen Tomaten, Basilikum und Knoblauch</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Glutenhaltiges Getreide">G</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="starters" data-tags="carpaccio rindfleisch parmesan">
+                        <div class="menu-item-image">
+                            <img src="https://fitaliancook.com/wp-content/uploads/2024/06/carpaccio-rezept-rind-beitragsbild.jpg" alt="Carpaccio">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Carpaccio di Manzo <span class="menu-item-price">€12.90</span></h4>
+                            <p class="menu-item-description">Dünn geschnittenes Rinderfilet mit Rucola, Parmesan und Balsamico-Reduktion</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Laktose">L</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="starters" data-tags="mozzarella caprese käse tomaten vegetarisch">
+                        <div class="menu-item-image">
+                            <img src="https://www.cookinwithmima.com/wp-content/uploads/2021/08/Caprese-Salad-3.jpg" alt="Mozzarella Caprese">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Insalata Caprese <span class="menu-item-price">€9.80</span></h4>
+                            <p class="menu-item-description">Frischer Büffelmozzarella mit Tomaten, Basilikum und Olivenöl</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="starters" data-tags="garnelen cocktail avocado meeresfrüchte">
+                        <div class="menu-item-image">
+                            <img src="https://files.cleverleben.at/clever_downloads/recipes/Recipe_629.jpg" alt="Garnelencocktail">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Cocktail di Gamberi <span class="menu-item-price">€14.50</span></h4>
+                            <p class="menu-item-description">Frische Garnelen mit hausgemachter Cocktail-Sauce und Avocado</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Eier">E</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="main-courses">
+                <h3>Hauptspeisen</h3>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="main-courses" data-tags="lachs fisch gemüse">
+                        <div class="menu-item-image">
+                            <img src="https://lebeneo.de/wp-content/uploads/2017/02/lachs-600.jpg" alt="Gegrilltes Lachs-Filet">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Salmone alla Griglia <span class="menu-item-price">€22.50</span></h4>
+                            <p class="menu-item-description">Mit frischem Gemüse und hausgemachter Sauce</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Fisch">F</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main-courses" data-tags="pasta primavera gemüse vegetarisch">
+                        <div class="menu-item-image">
+                            <img src="https://images.services.kitchenstories.io/w7kIw5bZaJP6rgq3Zj_HOouUq_U=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2572-picnic-final-photo-4x3.jpg" alt="Pasta Primavera">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Pasta Primavera <span class="menu-item-price">€18.90</span></h4>
+                            <p class="menu-item-description">Mit saisonalem Gemüse und Parmesankäse</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Glutenhaltiges Getreide">G</span>
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main-courses" data-tags="pizza napoletana teig käse">
+                        <div class="menu-item-image">
+                            <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/48a49653c8716457eb0b2f7eb3c7d74c/Derivates/8d83d9ed4567fa15456d8eec7557e60006a15576.jpg" alt="Pizza Napoletana">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Pizza Napoletana <span class="menu-item-price">€16.50</span></h4>
+                            <p class="menu-item-description">Nach traditionellem Rezept im Steinofen gebacken</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Glutenhaltiges Getreide">G</span>
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main-courses" data-tags="steak rindfleisch kartoffeln gemüse">
+                        <div class="menu-item-image">
+                            <img src="https://www.gourmetfleisch.de/shop/images/products/main/detail/14255.jpg" alt="Rinder-Steak">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Bistecca di Manzo <span class="menu-item-price">€26.90</span></h4>
+                            <p class="menu-item-description">Gegrilltes Ribeye-Steak mit Rosmarin-Kartoffeln und Gemüse</p>
+                            <div class="allergen-tags">
+                                <!-- Keine häufigen Allergene -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main-courses" data-tags="hähnchen huhn mediterran gemüse">
+                        <div class="menu-item-image">
+                            <img src="https://www.suedbayerische-fleischwaren.de/static/b4af72f5af6236f0405cb03a378f5cdf/f843a/haehnchenbrust-mediterran-gefuellt.jpg" alt="Hähnchenbrust">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Petto di Pollo <span class="menu-item-price">€19.50</span></h4>
+                            <p class="menu-item-description">Mit Thymian, Zitrone und mediterranem Gemüse</p>
+                            <div class="allergen-tags">
+                                <!-- Keine häufigen Allergene -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main-courses" data-tags="risotto pilze trüffel vegetarisch">
+                        <div class="menu-item-image">
+                            <img src="https://www.giallozafferano.it/images/6-685/Risotto-ai-funghi-porcini_650x433_wm.jpg" alt="Risotto">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Risotto ai Funghi <span class="menu-item-price">€17.90</span></h4>
+                            <p class="menu-item-description">Cremiges Risotto mit Steinpilzen und Trüffelöl</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <h3>Dolci</h3>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="desserts" data-tags="tiramisu kaffee mascarpone">
+                        <div class="menu-item-image">
+                            <img src="https://www.kingarthurbaking.com/sites/default/files/2023-03/Tiramisu_1426.jpg" alt="Tiramisu">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Tiramisu Classico <span class="menu-item-price">€7.50</span></h4>
+                            <p class="menu-item-description">Klassisches italienisches Dessert mit Mascarpone und Espresso</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Glutenhaltiges Getreide">G</span>
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Eier">E</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts" data-tags="panna cotta beeren sahne">
+                        <div class="menu-item-image">
+                            <img src="https://www.allrecipes.com/thmb/NlP50cO2BjJdN4uGvl5JhW0Rx2A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-72567-Panna-cotta-ddmfs-4x3-14ae724a2a8e4ca3a79c5e27b2b61994.jpg" alt="Panna Cotta">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Panna Cotta ai Frutti di Bosco <span class="menu-item-price">€6.90</span></h4>
+                            <p class="menu-item-description">Mit frischen Beeren und Beerensauce</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts" data-tags="crème brûlée vanille">
+                        <div class="menu-item-image">
+                            <img src="https://www.allrecipes.com/thmb/y-S61IJkYyCUjTMGYqkaoJGwBrY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-228515-simple-creme-brulee-dessert-dmfs-4x3-821623e7a86548eeb89370ac23d5f251.jpg" alt="Crème Brûlée">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Crème Brûlée <span class="menu-item-price">€8.20</span></h4>
+                            <p class="menu-item-description">Vanille-Crème mit karamellisierter Zuckerkruste</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Eier">E</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts" data-tags="schokoladenkuchen eis">
+                        <div class="menu-item-image">
+                            <img src="https://www.daskochrezept.de/sites/daskochrezept.de/files/styles/full_width_tablet_4_3/public/stockfood/stockfood-00644421.jpg?h=2a2492b4&itok=-z32AAlO" alt="Schokoladenkuchen">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Tortino al Cioccolato <span class="menu-item-price">€8.90</span></h4>
+                            <p class="menu-item-description">Mit flüssigem Kern und einer Kugel Vanilleeis</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Glutenhaltiges Getreide">G</span>
+                                <span class="allergen-tag" title="Laktose">L</span>
+                                <span class="allergen-tag" title="Eier">E</span>
+                                <span class="allergen-tag" title="Nüsse">N</span>
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="drinks">
+                <h3>Getränke</h3>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="drinks" data-tags="wein rot weiß rosé">
+                        <div class="menu-item-image">
+                            <img src="https://www.hellas-archangelos.gr/wp-content/uploads/2014/02/drink-12.jpg" alt="Wein">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Vino della Casa (0,2l) <span class="menu-item-price">€5.50</span></h4>
+                            <p class="menu-item-description">Rot, Weiß oder Rosé</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                                <span class="allergen-tag" title="Vegan">VG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks" data-tags="cocktail alkohol">
+                        <div class="menu-item-image">
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/01/retro-cocktails-b12b00d.jpg" alt="Cocktail">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Cocktails <span class="menu-item-price">ab €8.90</span></h4>
+                            <p class="menu-item-description">Verschiedene Klassiker und hausgemachte Spezialitäten</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks" data-tags="limonade früchte">
+                        <div class="menu-item-image">
+                            <img src="https://www.usa-kulinarisch.de/wp-content/uploads/2011/06/lemonade-1.jpg" alt="Limonade">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Limonata Fatta in Casa (0,3l) <span class="menu-item-price">€4.50</span></h4>
+                            <p class="menu-item-description">Frisch zubereitet mit saisonalen Früchten</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                                <span class="allergen-tag" title="Vegan">VG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks" data-tags="kaffee espresso">
+                        <div class="menu-item-image">
+                            <img src="https://einstein-kaffee.de/wp-content/uploads/2021/01/Einstein-Kaffee-espresso-Tasse-mood_01.jpg" alt="Kaffee">
+                        </div>
+                        <div class="menu-item-info">
+                            <h4>Caffè & Espresso <span class="menu-item-price">ab €2.80</span></h4>
+                            <p class="menu-item-description">Verschiedene Kaffeespezialitäten aus fairem Handel</p>
+                            <div class="allergen-tags">
+                                <span class="allergen-tag" title="Vegetarisch">V</span>
+                                <span class="allergen-tag" title="Vegan">VG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>More Than Pizza Ristorante</h3>
+                <p>Qualitativ hochwertige Speisen mit ausgezeichnetem Service in gemütlicher Atmosphäre.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Freitag: 11:00 - 22:00<br>
+                Samstag - Sonntag: 10:00 - 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Restaurantstraße 123<br>
+                12345 Musterstadt<br>
+                Tel: +49 123 456789<br>
+                Email: info@More Than Pizza.de</p>
+            </div>
+            <div class="footer-section">
+                <h3>Folgen Sie uns</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>&copy; <span id="year"></span><script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+                More Than Pizza Ristorante. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript für Menü-Filter -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

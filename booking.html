@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tischreservierung - More than Pizza Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+                      <img src="https://static.vecteezy.com/system/resources/thumbnails/024/284/682/small_2x/restaurant-logo-5-png.png" alt="More than Pizza Logo" class="logo">
+
+            <div class="logo-text">
+                <h1>More than Pizza</h1>
+                <span>RESTAURANT</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="chefs.html">CHEFS</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-page">
+        <div class="booking-content">
+            <h2>Reservieren Sie Ihren Tisch</h2>
+            <p>Planen Sie Ihren Besuch bei uns und genießen Sie ein unvergessliches kulinarisches Erlebnis in unserem Restaurant. Ob romantisches Abendessen, Geschäftsessen oder Familienfeier – wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.</p>
+            <p>Unser Team wird sich umgehend um Ihre Anfrage kümmern und diese bestätigen. Bitte beachten Sie, dass eine Reservierung erst nach unserer Bestätigung gültig ist.</p>
+            <p>Für größere Gruppen oder besondere Anlässe empfehlen wir Ihnen, uns direkt telefonisch zu kontaktieren.</p>
+            <div class="info-box">
+                <h3>Reservierungshinweise</h3>
+                <ul>
+                    <li>Reservierungen sind bis zu 3 Monate im Voraus möglich</li>
+                    <li>Kurzfristige Reservierungen (gleicher Tag) bitte telefonisch</li>
+                    <li>Bei Verspätung von mehr als 15 Minuten kann Ihre Reservierung verfallen</li>
+                    <li>Für Gruppen ab 8 Personen bieten wir spezielle Menüs an</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h3>Reservierungsanfrage</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Datum *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Uhrzeit *</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Anzahl der Gäste *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Personen</option>
+                        <option value="3">3 Personen</option>
+                        <option value="4">4 Personen</option>
+                        <option value="5">5 Personen</option>
+                        <option value="6">6 Personen</option>
+                        <option value="7">7 Personen</option>
+                        <option value="8+">8+ Personen</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="occasion">Anlass (optional)</label>
+                    <select id="occasion" name="occasion">
+                        <option value="">Bitte wählen</option>
+                        <option value="birthday">Geburtstag</option>
+                        <option value="anniversary">Jubiläum</option>
+                        <option value="business">Geschäftsessen</option>
+                        <option value="other">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Besondere Wünsche oder Anmerkungen</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Reservierung anfragen</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>More than Pizza Restaurant</h3>
+                <p>Wir servieren qualitativ hochwertige Speisen mit ausgezeichnetem Service in einer gemütlichen Atmosphäre.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Freitag: 11:00 - 22:00<br>
+                Samstag - Sonntag: 10:00 - 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Restaurantstraße 123<br>
+                12345 Musterstadt<br>
+                Tel: +49 123 456789<br>
+                Email: info@More than Pizza.de</p>
+            </div>
+            <div class="footer-section">
+                <h3>Folgen Sie uns</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>&copy; <span id="year"></span><script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+                More than Pizza Restaurant. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html> 
